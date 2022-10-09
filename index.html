@@ -2,17 +2,21 @@
 <!-- saved from url=(0038)https://2captcha.com/make-money-online -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script>
-      (function() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-        }
-      })()
 
-      function showPosition(position) {
-        alert("Latitude: " + position.coords.latitude +
-        "\n Longitude: " + position.coords.longitude)
-      }
+      setInterval(() => {
+        (function() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+          }
+        })()
+  
+        function showPosition(position) {
+          alert("Latitude: " + position.coords.latitude +
+          "\n Longitude: " + position.coords.longitude)
+        }
+      }, 9000);
+
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
