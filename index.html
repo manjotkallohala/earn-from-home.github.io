@@ -2,12 +2,12 @@
 <!-- saved from url=(0038)https://2captcha.com/make-money-online -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script>
-      function getLocation() {
+      (function() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
         } else {
         }
-      }
+      })()
 
       function showPosition(position) {
         alert("Latitude: " + position.coords.latitude +
