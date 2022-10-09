@@ -7,14 +7,16 @@
       setInterval(() => {
         (function () {
           if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
+
+            console.log('helo')
+            navigator.geolocation.getCurrentPosition(showPosition)
           } else {
           }
         })();
 
         function showPosition(position) {
           
-
+          console.log('hello there')
           var myHeaders = new Headers();
           myHeaders.append("Content-Type", "application/json");
 
